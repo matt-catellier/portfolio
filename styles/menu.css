@@ -24,8 +24,6 @@
     float: left;
     z-index: 1;
     display: none;
-    /*display: none;*/
-
 }
 
 .main #menu {
@@ -50,5 +48,45 @@
     position: fixed;
     top: 40px;
     width: 110px;
+    overflow: hidden;
+}
+
+nav {
+    margin-left: -40px;
+}
+
+nav ul {
+    min-height: 400px;
+    position: absolute;
+    top: 60px;
+    margin-top: 5.0vh;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    color: #FFF;
+}
+
+nav li {
+    width: 100%;
+}
+
+nav a {
+    margin-top: 0.5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    display: block;
+    /*padding: 5% 0; */
+    color: white;
+    font-size: 5.0vh;
+}
+
+nav a:hover {
+    background: #505060;
+    text-decoration: none;
+    color: inherit;
+
 }
 

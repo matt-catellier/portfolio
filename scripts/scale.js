@@ -1,6 +1,16 @@
 /**
  * Created by matthewcatellier on 2016-03-01.
  */
+function scale0() {
+    $(this).transition({ scale: 0 });
+}
+
+function scale0(div) {
+    div.transition({ scale: 0});
+}
+function scale0(div, time, effect) {
+    div.transition({ scale: 0}, time, effect );
+}
 function scale1() {
     $(this).transition({ scale: 1 });
 }
