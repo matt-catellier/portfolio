@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> matt catellier - portfolio</title>
+
     <!-- jQuery 2.2.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!-- jQuery transit links -->
@@ -13,11 +14,16 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
     <!-- font awesome -->
-    <link  rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- CUSTOM -->
     <link rel="stylesheet" href="styles/site.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/logo.css">
+    <link rel="stylesheet" href="styles/welcome.css"> 
+    <link rel="stylesheet" href="styles/bio-icon.css">
+    <link rel="stylesheet" href="styles/experience-icon.css">
+    <link rel="stylesheet" href="styles/contact-icon.css">
     <link rel="stylesheet" href="styles/socail.css">
 
     <script src="scripts/scale.js" defer></script>
@@ -38,24 +44,41 @@
                     <ul class="clearfix">
                         <li><a href="#"><h1>HOME</h1></a></li>
                         <li><a href="#"><h1>BIO</h1></a></li>
-                        <li><a href="#"><h1>EXPERIENCE</h1></a></li>
+                        <li><a href="#"><h1>WHAT I DO</h1></a></li>
                         <li><a href="#"><h1>CONTACT INFO</h1></a></li>
                     </ul>
                 </nav>
                 <div class="block col-xs-12 col-sm-6 col-lg-3 logo blank">
-                    <h2> LOGO </h2>
+                    <div class="logo center">                     
+                        <img src="images/Logo_eye.png" alt="logo">
+                        <h2> MATT CATELLIER </h2>
+                    </div>
                 </div>
                 <div class="block col-xs-12 col-sm-6 col-lg-3 hidden-xs">
-                    <h2> WELCOME </h2>
+                    <div class="welcome">
+                        <h1> WELCOME </h1>
+                        <h2> My name's Matt.</h2>
+                        <h2> I'm a full-stack developer. </h2>
+                        <h2> This is my online portfolio. </h2>
+                    </div>
                 </div>
                 <div class="block col-lg-3 visible-lg blank">
 
                 </div>
-                <div class="block col-xs-12 col-sm-6 col-lg-3">
-                    <h1> BIO  </h1>
+                <div class="block col-xs-12 col-sm-6 col-lg-3">  
+                    <h1> ABOUT ME  </h1>                 
+                    <div class="bio-icon center">
+                        <div class="icon"> 
+                            <a href="#"> <i class="fa fa-black-tie"> </i></a>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="block col-xs-12 col-sm-6 col-lg-3">
-                    <h1> EXPERIENCE </h1>
+                    <h1> WHAT I DO </h1>
+                    <div class="experience-icon center">
+                            <a href="#"> <i class="fa fa-laptop"> </i></a>
+                            <!-- <a href="#"> <i class="fa fa-code"> </i></a> -->
+                    </div>
                 </div>
 
                 <div class="block col-lg-3 visible-lg blank">
@@ -63,7 +86,10 @@
                 </div>
 
                 <div class="block col-xs-12 col-sm-6 col-lg-3">
-                    <h1> CONTACT INFO </h1>
+                    <h1> CONTACT ME </h1>
+                    <div class="contact-icon center">
+                        <a href="#"> <i class="fa fa-paper-plane-o"> </i></a>
+                    </div> 
                 </div>
                 <div class="block col-lg-3 visible-lg pattern">
 
@@ -71,9 +97,9 @@
                 <div class="block col-lg-3 visible-lg blank">
 
                 </div>
-                <div class="block  socail-block col-xs-12 col-sm-6 col-lg-3">
-                    <h1> Find me on: </h1>
-                    <div class="socail-icons clearfix">            
+                <div class="block socail-block col-xs-12 col-sm-6 col-lg-3">
+                    <h1> Find me on:</h1>  
+                    <div class="socail-icons center clearfix">       
                         <div class="icon"><a href="#"> <i class="fa fa-linkedin"></i> </a> </div>
                         <div class="icon"><a href="#" class="github"> <i class="fa fa-github"></i> </a> </div>
                         <div class="icon"><a href="#"> <i class="fa fa-stack-overflow"></i> </a></div>
@@ -92,7 +118,5 @@
             <p> mattcatellier</p>
         </div>
     </div>
-
-
 </body>
 </html>
