@@ -47,5 +47,5 @@ function scale40(div, time, effect) {
 }
 
 function expandMenu(div, time, effect) {
-    div.transition({ scale: [40, 60] }, time, effect );
+    div.transition({ scale: [60, 70] }, time, effect );
 }

@@ -16,14 +16,13 @@ nav.css({'display': 'block' });
 
 clicked = false;
 menu.click(function() {
-
     if(!clicked) {
         expandMenu(navBox, 1400, 'ease');
         scale1(nav, 1500, 'ease');
         clicked = true;
     } else {
-        scale1(navBox, 1500, 'ease'); // retract menu
         scale0(nav, 1400, 'ease');
+        scale1(navBox, 1500, 'ease'); // retract menu
         clicked = false;
     }
 })

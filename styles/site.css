@@ -46,6 +46,8 @@ body {
 
 .footer > p {
     float: right;
+    margin-right: 20px;
+    color: #FFF;
 }
 
 .blank {
@@ -55,3 +57,20 @@ body {
 .pattern {
     background: lightseagreen;
 }
+
+
+/* TEXT ELEMENTS */
+h1 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+
+
