@@ -34,7 +34,7 @@ body {
 .content .block {
     display: inline-block;
     /*width: 150px;*/
-    height: 300px;
+    height: 270px;
     border: 1px solid black;
     background: lightgray;
     margin: 0;
@@ -75,6 +75,7 @@ h2 {
 h3 {
     font-size: 1.7rem;
 }
+
 
 /* position */
 
