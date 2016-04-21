@@ -1,6 +1,6 @@
 .box{
     opacity: 0.8;
-    background: #505060;
+    background: #708090;
     border-radius: 1px;
     box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
     margin: 35% 35%;
@@ -31,25 +31,46 @@
     display: inline-block;
     position: fixed;
     top: 40px;
-    left: calc(50% - 55px);
+    left: calc(50% - 35px);
     z-index: 2;
-    padding: 10px;
-    background: lightblue;
-    width: 110px;
+    color: white;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #708090;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
 }
 
-.main #menu > h1 {
-    margin: 0px;
+.main #menu:hover {
+    cursor: pointer;
+}
+
+
+.main #menu > i {
+    font-size: 20px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
 }
 
 
 #nav-box {
     z-index: 1;
     margin: 0px;
-    left: calc(50% - 55px);
+    left: calc(50% - 30px);
     position: fixed;
     top: 40px;
-    width: 110px;
+    width: 60px;
+}
+
+#nav-box {
+    z-index: 1;
+    margin: 0px;
+    left: calc(50% - 10px);
+    position: fixed;
+    top: 40px;
+    width: 20px;
+    height: 10px;
 }
 
 nav {
@@ -84,7 +105,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #505060;
+    background: #708090;
     text-decoration: none;
     color: inherit;
 

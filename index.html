@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> matt catellier - portfolio</title>
+    <title> Matt Catellier - Software Systems Developer </title>
 
     <!-- jQuery 2.2.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -15,12 +15,15 @@
     
     <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Cabin:600italic,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
 
     <!-- CUSTOM -->
     <link rel="stylesheet" href="styles/site.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/logo.css">
-    <link rel="stylesheet" href="styles/welcome.css"> 
+    <link rel="stylesheet" href="styles/welcome.css">
     <link rel="stylesheet" href="styles/bio-icon.css">
     <link rel="stylesheet" href="styles/experience-icon.css">
     <link rel="stylesheet" href="styles/contact-icon.css">
@@ -37,24 +40,37 @@
             <div class="main clearfix">
                 <div id="nav-box" class="box clearfix" >
                 </div>
-                <div id="menu" class="clearfix" >
-                    <h1> MENU </h1>
+                <div id="menu" class="clearfix">
+                    <i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
                 </div>
                 <nav class="clearfix">
                     <ul class="clearfix">
-                        <li><a href="#"><h1>HOME</h1></a></li>
-                        <li><a href="#"><h1>BIO</h1></a></li>
+                        <li><a href="index.html"><h1>HOME</h1></a></li>
+                        <li><a href="about.html"><h1>ABOUT ME</h1></a></li>
                         <li><a href="#"><h1>WHAT I DO</h1></a></li>
-                        <li><a href="#"><h1>CONTACT INFO</h1></a></li>
+                        <li><a href="contact.html"><h1>CONTACT ME</h1></a></li>
                     </ul>
                 </nav>
-                <div class="block col-xs-12 col-sm-6 col-lg-3 logo blank">
-                    <div class="logo center">                     
-                        <img src="images/Logo_eye.png" alt="logo">
-                        <h2> MATT CATELLIER </h2>
+                <div id="logo-block" class="block col-xs-12 col-sm-6 col-lg-3 logo blank">
+                    <div class="logo center">       
+                        <img src="images/logo.png" alt="logo">
+                        <h1> Matt Catellier </h1>
                     </div>
                 </div>
-                <div class="block col-xs-12 col-sm-6 col-lg-3 hidden-xs">
+                <div id="about-block" class="block col-xs-12 col-sm-6 col-lg-3 teal">
+                    <h1> ABOUT ME  </h1>
+                    <div class="bio-icon center">
+                        <a href="about.html"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a>
+                        <!-- <div class="icon">
+                            <a href="about.html"> <i class="fa fa-black-tie"> </i></a>
+                            
+                        </div> -->
+                    </div>
+                </div>
+                <div class="block col-lg-3 visible-lg darkblue">
+
+                </div> 
+                <div class="welcome-block block col-xs-12 col-sm-6 col-lg-3 hidden-xs hidden-lg darkblue">
                     <div class="welcome col-sm-12">
                         <h1> WELCOME </h1>
                         <h2> My name is Matt Catellier.</h2>
@@ -62,60 +78,78 @@
                         <h2> This is my online portfolio. </h2>
                     </div>
                 </div>
-                <div class="block col-lg-3 visible-lg blank">
-
+                <div class="socail-block block col-lg-3 visible-lg">
+                    <h1> Find me on:</h1>
+                    <div class="socail-icons center clearfix">
+                        <div class="icon"><a href="https://ca.linkedin.com/in/matthew-catellier-06995167"> <i class="fa fa-linkedin"></i> </a> </div>
+                        <div class="icon"><a href="https://github.com/matt-catellier" class="github"> <i class="fa fa-github"></i> </a> </div>
+                        <div class="icon"><a href="http://stackoverflow.com/users/5724880/matt-catellier"> <i class="fa fa-stack-overflow"></i> </a></div>
+                    </div>
                 </div>
-                <div class="block col-xs-12 col-sm-6 col-lg-3">  
-                    <h1> ABOUT ME  </h1>                 
-                    <div class="bio-icon center">
-                        <div class="icon"> 
-                            <a href="#"> <i class="fa fa-black-tie"> </i></a>
-                        </div>
-                    </div>                    
+                <div class="welcome-block block col-lg-3 visible-lg teal">
+                    <div class="welcome col-sm-12">
+                        <h1> HEY! </h1>
+                        <h2> Lets build something great!</h2>
+                    </div>
                 </div>
-                <div class="block col-xs-12 col-sm-6 col-lg-3">
-                    <h1> WHAT I DO </h1>
+                
+                <div id="portfolio-block" class="block col-xs-12 col-sm-6 col-lg-3">
+                <h1> WHAT I DO </h1>
                     <div class="experience-icon center">
+                    
                             <a href="#"> <i class="fa fa-laptop"> </i></a>
                             <!-- <a href="#"> <i class="fa fa-code"> </i></a> -->
                     </div>
                 </div>
-
-                <div class="block col-lg-3 visible-lg blank">
-
-                </div>
-
-                <div class="block col-xs-12 col-sm-6 col-lg-3">
-                    <h1> CONTACT ME </h1>
-                    <div class="contact-icon center">
-                        <a href="#"> <i class="fa fa-paper-plane-o"> </i></a>
-                    </div> 
-                </div>
-                <div class="block col-lg-3 visible-lg pattern">
-
-                </div>
-                <div class="block col-lg-3 visible-lg blank">
-
-                </div>
-                <div class="block socail-block col-xs-12 col-sm-6 col-lg-3">
-                    <h1> Find me on:</h1>  
-                    <div class="socail-icons center clearfix">       
-                        <div class="icon"><a href="#"> <i class="fa fa-linkedin"></i> </a> </div>
-                        <div class="icon"><a href="#" class="github"> <i class="fa fa-github"></i> </a> </div>
-                        <div class="icon"><a href="#"> <i class="fa fa-stack-overflow"></i> </a></div>
+                <div class="welcome-block block col-lg-3 visible-lg teal">
+                    <div class="welcome col-sm-12">
+                        <h1> WELCOME </h1>
+                        <h2> My name is Matt Catellier.</h2>
+                        <h2> I'm a full-stack developer. </h2>
+                        <h2> This is my online portfolio. </h2>
                     </div>
                 </div>
-
+                <div id="contact-block" class="block col-xs-12 col-sm-6 col-lg-3 hidden-lg teal">
+                    <h1> CONTACT ME </h1>
+                    <div class="contact-icon center">
+                        <a href="contact.html"> <i class="fa fa-paper-plane-o"> </i></a>
+                    </div>
+                </div>
                 <div class="block col-lg-3 visible-lg pattern">
 
+                </div> 
+                <div class="block col-lg-3 visible-lg pattern">
+                    
+                </div>   
+                <div class="block col-lg-3 visible-lg blank white">
+                </div>            
+                <div id="contact-block" class="block col-lg-3 visible-lg darkblue">
+                    <h1> CONTACT ME </h1>
+                    <div class="contact-icon center">
+                        <a href="contact.html"> <i class="fa fa-paper-plane-o"> </i></a>
+                    </div>
                 </div>
-                <div class="block col-lg-3 visible-lg blank">
+                
+                <div class="block col-lg-3 visible-lg ">
 
+                </div> 
+                
+                <div id="socail-block" class="block socail-block col-xs-12 col-sm-6 col-lg-3 hidden-lg">
+                    <h1> Find me on:</h1>
+                    <div class="socail-icons center clearfix">
+                        <div class="icon"><a href="https://ca.linkedin.com/in/matthew-catellier-06995167"> <i class="fa fa-linkedin"></i> </a> </div>
+                        <div class="icon"><a href="https://github.com/matt-catellier" class="github"> <i class="fa fa-github"></i> </a> </div>
+                        <div class="icon"><a href="http://stackoverflow.com/users/5724880/matt-catellier"> <i class="fa fa-stack-overflow"></i> </a></div>
+                    </div>
                 </div>
+                
+
             </div>
         </div>
         <div class="footer">
-            <p> mattcatellier</p>
+            <p> 
+            Copyright © Matt Catellier 2016.
+            </p>
         </div>
     </div>
 </body>
