@@ -2,7 +2,7 @@ body {
     min-height: 300px;
     opacity: 1.0;
     background: #708090;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .wrapper{
@@ -30,12 +30,12 @@ body {
 
 .content {
     margin-top: 30px;
+    min-width: 420px;
 }
 
 .content .block {
     display: inline-block;
     height: 280px;
-    background: #FFF;
     margin: 0;
     opacity: 1;
 }
@@ -88,7 +88,6 @@ h3 {
 }
 
 h2, h3,h4, h5, h6 {
-    font-style: italic;
 }
 
 /* position */
@@ -116,18 +115,27 @@ h2, h3,h4, h5, h6 {
 
 /* COLOR SCHEMES */
 
-.wrapper .darkblue {
+.darkblue {
     background: #333b7b;
     color: #FFF;
 }
 
-.wrapper .teal {
+.teal {
     background: #127486;
     color: #FFF;
 }
 
+.grey {
+    background: #708090;
+    color: white;
+}
+
+.light-grey {
+    background: #f5f5f5;
+}
+
 .white {
-    bacground: #FFF;
+    background: #FFF;
 }
 
 /* responsive */
