@@ -1,1 +1,4 @@
 .idea/
+.git/
+.DS_Store
+.gitignore
