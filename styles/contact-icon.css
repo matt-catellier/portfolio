@@ -1,0 +1,8 @@
+.contact-icon > a {
+	font-size: 70px;
+	color: inherit;
+}
+
+.contact-icon {
+	display: block;
+}

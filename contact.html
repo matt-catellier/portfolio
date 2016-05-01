@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Matt Catellier - Contact Info </title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- jQuery 2.2.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- jQuery transit links -->
+    <script type="text/javascript" src="scripts/jquery.transit/jquery.transit.js"></script>
+
+    <!-- BOOT STRAP-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/socail.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <script src="scripts/scale.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/effects.js" defer></script>
+    <script>
+        $(function() {
+                var height = $('.right-column').height();
+                var leftColumn = $('.left-column');
+                leftColumn.height(height);
+
+                $(window).resize(function() {
+                        height = $('.right-column').height();
+                        leftColumn.height(height);
+                });
+            });
+    </script>
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="hide-blocks"></div>
+    <div class="content clearfix">
+        <div class="main clearfix">
+            <div id="nav-box" class="box clearfix" >
+            </div>
+            <div id="menu" class="clearfix" >
+                <i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
+            </div>
+            <nav class="clearfix">
+                <ul class="clearfix">
+                    <li><a href="index.html"><h1>HOME</h1></a></li>
+                    <li><a href="about.html"><h1>ABOUT ME</h1></a></li>
+                    <li><a href="portfolio.html"><h1>PAST PROJECTS</h1></a></li>
+                    <li><a href="contact.html"><h1>CONTACT INFO</h1></a></li>
+                </ul>
+            </nav>
+            <div class="columns col-xs-12">
+                <div class="left-column clearfix col-xs-12 col-sm-6 white">
+                    <h4 id="info-heading">CONTACT INFO</h4>
+                    <div class="contact-info">
+                        <div class="icon linked darkblue">
+                            <a href="https://ca.linkedin.com/in/matthew-catellier-06995167">
+                                <i class="fa fa-linkedin"></i>
+                            </a>                     
+                        </div>
+                        <p>LinkedIn</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="icon phone darkblue">
+                            <script TYPE="text/javascript">
+                                <!--
+                                // protected email script by Joe Maller
+                                // JavaScripts available at http://www.joemaller.com
+                                // this script is free to use and distribute
+                                // but please credit me and/or link to my site
+                                phone='+1604'
+                                phone=(phone + '657' + '6511')
+                                document.write('<a href="tel:' + phone + '">' + '<i class="fa fa-mobile"></i>' + '</a>')
+                                //-->
+                            </script>
+                            <noscript>
+                                <a href="#"><i class="fa fa-mobile"></i></a>
+                            </noscript>
+                        </div>
+                        <p>
+                            <script TYPE="text/javascript">
+                                document.write(phone);
+                            </script>
+                            <noscript>
+                                Please enable JavaScript to contact me.
+                            </noscript>
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="icon mail darkblue">
+                            <script TYPE="text/javascript">
+                                emailE='gmail.com';
+                                emailE=('mattcatellier' + '@' + emailE);
+                                document.write('<a href="mailto:' + emailE + '">' + '<i class="fa fa-envelope-o"></i>' + '</a>')
+                            </script>
+                            <noscript>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                            </noscript>
+                        </div>
+                        <p>
+                            <script TYPE="text/javascript">
+                                document.write(emailE);
+                            </script>
+                            <noscript>
+                                Please enable JavaScript to contact me.
+                            </noscript>
+                        </p>
+                    </div>
+                    <div class="write-up">
+                        <h4>NEED A DEVELOPER?</h4>
+                        <p> Got an idea? Need help implementing it? </p>
+                        <p> I can design, develop, and build it for you.</p>
+                        <p> I am also part of network of developers who are familiar with all kinds
+                        or technology. What ever your needs, I can help get the job done. </p>
+                    </div>
+                </div>
+
+                <div class="right-column clearfix col-xs-12 col-sm-6 darkblue">
+                        <div class="write-up">
+                            <h4>WANT TO GET IN TOUCH?</h4>
+                            <p> Send me an email with any ideas or questions you may have.
+                                I look forward to hearing from you. </p>
+                        </div>
+                    <div class="clearfix form-container">
+                        <form class="clearfix">
+                            <div>
+                                <label>Name:</label><input type="text" id="name">
+                            </div> <br />
+                            <div>
+                                <label for="email">Email:</label><input type="text" id="email">
+                            </div> <br />
+                            <div>
+                             <label for="website">Website:</label><input type="text" id="website">
+                            </div> <br />
+                            <div class="message-container">
+                                <label for="message">Message:</label>
+                                <textarea name="" id="message" cols="30" rows="10"></textarea>
+                                <button type="submit" class="btn"> SEND </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p> Copyright © Matt Catellier 2016.</p>
+    </div>
+</div>
+</body>
+</html>

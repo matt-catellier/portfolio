@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> Matt Catellier - Software Systems Developer </title>
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- jQuery 2.2.0 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!-- jQuery transit links -->
@@ -24,8 +24,6 @@
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/logo.css">
     <link rel="stylesheet" href="styles/welcome.css">
-    <link rel="stylesheet" href="styles/bio-icon.css">
-    <link rel="stylesheet" href="styles/experience-icon.css">
     <link rel="stylesheet" href="styles/contact-icon.css">
     <link rel="stylesheet" href="styles/socail.css">
 
@@ -48,25 +46,26 @@
                     <ul class="clearfix">
                         <li><a href="index.html"><h1>HOME</h1></a></li>
                         <li><a href="about.html"><h1>ABOUT ME</h1></a></li>
-                        <li><a href="portfolio.html"><h1>WHAT I DO</h1></a></li>
+                        <li><a href="portfolio.html"><h1>PAST PROJECTS</h1></a></li>
                         <li><a href="contact.html"><h1>CONTACT INFO</h1></a></li>
                     </ul>
                 </nav>
                 <div id="logo-block" class="block col-xs-12 col-sm-6 col-lg-3 logo white">
-                    <div class="logo center">       
+                    <div class="logo center">
                         <img src="images/logo.png" alt="logo">
                         <h1> Matt Catellier </h1>
                     </div>
                 </div>
                 <div id="about-block" class="block col-xs-12 col-sm-6 col-lg-3 teal">
-                    <h1> ABOUT ME  </h1>
-                    <div class="bio-icon center">
-                        <a href="about.html"><i class="fa fa-hand-peace-o" aria-hidden="true"></i></a>
-                    </div>
+                    <a href="about.html" class="clearfix">
+                        <h1> ABOUT ME  </h1>
+                        <div class="bio-icon center">
+                            <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+                            <h2 class="sliding-middle-out"></h2>
+                        </div>
+                    </a>
                 </div>
-                <div class="block col-lg-3 visible-lg darkblue">
-
-                </div> 
+                <div class="block col-lg-3 visible-lg darkblue"></div>
                 <div class="welcome-block block col-xs-12 col-sm-6 col-lg-3 hidden-xs hidden-lg darkblue">
                     <div class="welcome col-sm-12">
                         <h1> WELCOME </h1>
@@ -89,12 +88,14 @@
                         <h2> Lets build something great!</h2>
                     </div>
                 </div>
-                
                 <div id="portfolio-block" class="block col-xs-12 col-sm-6 col-lg-3 white">
-                    <h1> PAST PROJECTS </h1>
-                    <div class="experience-icon center">          
-                            <a href="portfolio.html"> <i class="fa fa-laptop"> </i></a>
-                    </div>
+                    <a href="portfolio.html">
+                        <h1> PAST PROJECTS </h1>
+                        <div class="experience-icon center">
+                            <i class="fa fa-laptop"></i>
+                            <h2 class="sliding-middle-out"></h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="welcome-block block col-lg-3 visible-lg teal">
                     <div class="welcome col-sm-12">
@@ -105,46 +106,43 @@
                     </div>
                 </div>
                 <div id="contact-block-main" class="block col-xs-12 col-sm-6 col-lg-3 hidden-lg teal">
-                    <h1> CONTACT INFO </h1>
-                    <div class="contact-icon center">
-                        <a href="contact.html"> <i class="fa fa-paper-plane-o"> </i></a>
-                    </div>
+                    <a href="contact.html">
+                        <h1> CONTACT INFO </h1>
+                        <div class="contact-icon center">
+                            <i class="fa fa-paper-plane-o"></i>
+                            <h2 class="sliding-middle-out"></h2>
+                        </div>
+                    </a>
                 </div>
-                <div class="block col-lg-3 visible-lg pattern">
-
-                </div> 
-                <div class="block col-lg-3 visible-lg pattern">
-                    
-                </div>   
+                <div class="block col-lg-3 visible-lg pattern"></div>
+                <div class="block col-lg-3 visible-lg pattern"></div>
                 <div class="block col-lg-3 visible-lg blank white">
-                </div>            
-                <div id="contact-block" class="block col-lg-3 visible-lg darkblue">
-                    <h1> CONTACT INFO </h1>
-                    <div class="contact-icon center">
-                        <a href="contact.html"> <i class="fa fa-paper-plane-o" aria-hidden="true"> </i></a>
-                    </div>
                 </div>
-                
-                <div class="block col-lg-3 visible-lg white">
-
-                </div> 
-                
+                <div id="contact-block" class="block col-lg-3 visible-lg darkblue">
+                    <a href="contact.html">
+                        <h1> CONTACT INFO </h1>
+                        <div class="contact-icon center">
+                            <i class="fa fa-paper-plane-o"></i>
+                            <h2 class="sliding-middle-out"></h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="block col-lg-3 visible-lg white"></div>
                 <div id="socail-block" class="block socail-block col-xs-12 col-sm-6 col-lg-3 hidden-lg white">
                     <h1> Find me on:</h1>
                     <div class="socail-icons center clearfix">
                         <div class="icon darkblue"><a href="https://ca.linkedin.com/in/matthew-catellier-06995167"> <i class="fa fa-linkedin"></i> </a> </div>
                         <div class="icon darkblue"><a href="https://github.com/matt-catellier" class="github"> <i class="fa fa-github"></i> </a> </div>
                         <div class="icon darkblue"><a href="http://stackoverflow.com/users/5724880/matt-catellier"> <i class="fa fa-stack-overflow"></i> </a></div>
+                        <noscript>
+                            <p><b> Please enable JavaScript! </b></p>
+                        </noscript>
                     </div>
                 </div>
-                
-
             </div>
         </div>
         <div class="footer">
-            <p> 
-            Copyright © Matt Catellier 2016.
-            </p>
+            <p>Copyright © Matt Catellier 2016.</p>
         </div>
     </div>
 </body>

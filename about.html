@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Matt Catellier - About Me</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- jQuery 2.2.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- jQuery transit links -->
+    <script type="text/javascript" src="scripts/jquery.transit/jquery.transit.js"></script>
+
+    <!-- BOOT STRAP-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+    <script src="scripts/scale.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <!--<script src="scripts/windowResize.js" defer></script>-->
+    <script>
+        $(function() {
+            var height = $('.right-column').height() + 10;
+            var leftColumn = $('.left-column');
+            leftColumn.height(height);
+
+            $(window).resize(function() {
+                    height = $('.right-column').height() + 10;
+                    leftColumn.height(height);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="hide-blocks"></div>
+    <div class="content clearfix">
+        <div class="main clearfix">
+            <div id="nav-box" class="box clearfix" >
+            </div>
+            <div id="menu" class="clearfix" >
+                <i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
+            </div>
+            <nav class="clearfix">
+                <ul class="clearfix">
+                    <li><a href="index.html"><h1>HOME</h1></a></li>
+                    <li><a href="about.html"><h1>ABOUT ME</h1></a></li>
+                    <li><a href="portfolio.html"><h1>PAST PROJECTS</h1></a></li>
+                    <li><a href="contact.html"><h1>CONTACT INFO</h1></a></li>
+                </ul>
+            </nav>
+            <div class="columns col-xs-12">
+                <div class="left-column clearfix col-xs-12 col-sm-6 white">
+                    <div class="heading">
+                        <img src="images/headshot.jpg" alt="professional headshot">
+                        <h1>WHO I AM</h1>
+                    </div>
+                    <p>I am a technically minded individual, who is passionate about learning new technologies and software
+                        development. Full stack developer with experience using industry leading technologies. Constantly
+                        looking to improve myself and the world around me. Willing to go above and beyond to do so</p>
+                    <p>Currently attending BCIT for the Software System Developer (Web Programmer) Certificate. It is an
+                        intense 9 month program where they introduce several client and server side tools/software's used to
+                        develop enterprise scale business applications.</p>
+                    <p>This site is host to the some of the projects that I have contributed to and is also host to a personal
+                        blog about the various technologies/softwares that I use.</p>
+                </div>
+
+                <div class="right-column clearfix col-xs-12 col-sm-6 light-grey">
+                    <h1>WHAT I DO </h1>
+                    <div class="col-xs-12">
+                        <h2> Front End </h2>
+                        <p>Enjoy designing rich, and resposive web applications with engaging and interactive content.</p>
+                        <div class="skills">
+                            <span class="skill teal">jQuery</span> 
+                            <span class="skill teal">morris-charts.js</span>
+                            <span class="skill teal">Angular</span>
+                            <span class="skill teal">Angular2</span>
+                            <span class="skill teal"> CSS </span> <span class="skill teal">SASS </span>
+                            <span class="skill teal">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <h2> Back End </h2>
+                        <p> Familiar with various server side technologies and frameworks. Strong understanding of SQL
+                            and data-driven design.</p>
+                        <div class="skills">
+                            <span class="skill grey"> Java </span> <span class="skill grey">C#</span> 
+                            <span class="skill grey">ASP.NET</span><span class="skill grey"> SQL </span>
+                            <span class="skill grey"> PHP</span> <span class="skill grey">Laravel </span>
+                            <span class="skill grey"> Terminal </span> <span class="skill grey"> Git Workflow</span> 
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <h2> Mobile </h2>
+                        <p> Have experience working in native environments for both iOS and Android application aswell leading hybrid technologies. </p>
+                        <div class=" skills ">
+                            <span class="skill darkblue"> Swift </span> <span class="skill darkblue">Xcode</span><span class="skill darkblue">Ionic2 </span>
+                            <span class="skill darkblue"> Android Studio </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <p> I enjoy all areas of development, from the database all the way to the User Experience.  What ever your projects needs, I am available for freelance, contract or direct client projects.</p>
+                        <p>Feel free to <a href="contact.html">send me and email here</a>.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>  Copyright © Matt Catellier 2016.  </p>
+    </div>
+</div>
+</body>
+</html>

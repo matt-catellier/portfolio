@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Matt Catellier - What I Do</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- jQuery 2.2.0 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- jQuery transit links -->
+    <script type="text/javascript" src="scripts/jquery.transit/jquery.transit.js"></script>
+
+    <!-- BOOT STRAP-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/projects.css">
+
+    <script src="scripts/scale.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/switch-effect.js" defer></script>
+
+    <!--<script src="scripts/windowResize.js" defer></script>-->
+    <script>
+        $(function() {
+            var height = $('.right-column').height() + 10;
+            var leftColumn = $('.left-column');
+            leftColumn.height(height);
+
+            $(window).resize(function() {
+                    height = $('.right-column').height() + 10;
+                    leftColumn.height(height);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="hide-blocks"></div>
+    <div class="content clearfix">
+        <div class="main clearfix">
+            <div id="nav-box" class="box clearfix" >
+            </div>
+            <div id="menu" class="clearfix" >
+                <i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
+            </div>
+            <nav class="clearfix">
+                <ul class="clearfix">
+                    <li><a href="index.html"><h1>HOME</h1></a></li>
+                    <li><a href="about.html"><h1>ABOUT ME</h1></a></li>
+                    <li><a href="portfolio.html"><h1>PAST PROJECTS</h1></a></li>
+                    <li><a href="contact.html"><h1>CONTACT INFO</h1></a></li>
+                </ul>
+            </nav>          
+            <div class="columns col-xs-12">
+                <div class="left-column clearfix col-xs-12 col-sm-6 white"> 
+                    <div class='project write-up'>
+                        <h4>  Project 2 - Write-up </h4> 
+                        <p> This is some text about write-up. This is some text about write-up.
+                        This is some text about write-up. This is some text about write-up.
+                        This is some text about write-up. This is some text about write-up. </p>
+                    </div> 
+                    <div class='project write-up'>
+                        <h4>  Project 1 - Write-up </h4> 
+                        <p> This is some text about write-up. This is some text about write-up.
+                        This is some text about write-up. This is some text about write-up.
+                        This is some text about write-up. This is some text about write-up. </p>
+                    </div>    
+                </div>
+                <div class="right-column clearfix col-xs-12 col-sm-6 light-grey">
+                    <div class="switches">
+                        <div class="switch-up col-xs-6 teal"> 
+                            <i class="fa fa-arrow-up center" aria-hidden="true"></i>
+                            </div>
+                        <div class="switch-down col-xs-6 darkblue">
+                            <i class="fa fa-arrow-down center" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class='project'> Project 1 - image </div>
+                    <div class='project'> Project 2 - image </div>  
+                    
+                </div>    
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>  Copyright © Matt Catellier 2016.  </p>
+    </div>
+</div>
+</body>
+</html>
