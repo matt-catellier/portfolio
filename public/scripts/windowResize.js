@@ -16,7 +16,7 @@ $(function() {
         height = $(window).height() - footerHeight;
         if(height > 700) {
             content.height(height);
-            main.height(height)
+            main.height(height);
         }
     });
 });

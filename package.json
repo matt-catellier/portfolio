@@ -1,0 +1,25 @@
+{
+    "name": "portfolio-mcatellier",
+    "version": "1.0.0",
+    "description": "personal portfolio for matthew catellier built using jQuery and node.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node_modules/.bin/httpster -p 3000 -d ./public/",
+        "build": "node_modules/.bin/grunt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://mattcatellier@bitbucket.org/mattcatellier/portfolio.git"
+    },
+    "author": "Matt Catellier",
+    "license": "UNLICENSED",
+    "homepage": "https://bitbucket.org/mattcatellier/portfolio#readme",
+    "dependencies": {
+        "httpster": "^1.0.3"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-browserify": "^5.0.0",
+        "grunt-contrib-jshint": "^1.0.0"
+    }
+}

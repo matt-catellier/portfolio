@@ -13,27 +13,27 @@
 
 	page = 1;
 	pages = 2;
-	
+
 	switchUp.on('click', function() {
 		console.log('up');
 		if(page < pages) {
-			console.log('page1')
+			console.log('page1');
 			page += 1;
 			leftPos = parseInt(leftPos) + step;
 			rightPos = parseInt(rightPos) - step;
 			leftArea.find('.project').transition({ y: leftPos });
 			rightArea.find('.project').transition({ y: rightPos});
 		}
-	})
+	});
 
 	switchDown.on('click', function() {
 		console.log('down');
 		if(page > 1) {
-			console.log('page2')
+			console.log('page2');
 			page -= 1;
-			leftPos = parseInt(leftPos) - step
-			rightPos = parseInt(rightPos) + step
+			leftPos = parseInt(leftPos) - step;
+			rightPos = parseInt(rightPos) + step;
 			leftArea.find('.project').transition({ y: leftPos});
 			rightArea.find('.project').transition({ y: rightPos });
 		}
-	})
+	});
