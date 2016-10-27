@@ -15,11 +15,15 @@
     "license": "UNLICENSED",
     "homepage": "https://bitbucket.org/mattcatellier/portfolio#readme",
     "dependencies": {
+        "grunt": "^1.0.1",
         "httpster": "^1.0.3"
     },
     "devDependencies": {
-        "grunt": "^1.0.1",
+        "grunt": "~0.4.0",
         "grunt-browserify": "^5.0.0",
-        "grunt-contrib-jshint": "^1.0.0"
+        "grunt-contrib-jshint": "^1.0.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-express": "^1.4.1",
+        "grunt-parallel": "^0.5.1"
     }
 }

@@ -19,14 +19,40 @@ module.exports = function(grunt) {
                 ],
                 dest: "public/build/app.js"
             }
+        },
+        watch: {
+            options: {
+                livereload: true
+            },
+            scripts: {
+                files: ["public/scripts/*.js"],
+                tasks: ["hint", "browserify"]
+            }
+            // css: {
+            //     files: ["public/styles/*.css"],
+            //     tasks: ["css"]
+            // },
+        },
+        express: {
+            all: {
+                options: {
+                    port: 3000,
+                    hostname: 'localhost',
+                    bases: ['./public'],
+                    livereload: true
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-browserify");
+    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks('grunt-express');
 
-    grunt.registerTask("hint",["jshint"]);
-    grunt.registerTask("bundle-js",["browserify"]);
+    grunt.registerTask("hint", ["jshint"]);
+    grunt.registerTask("bundle-js", ["browserify"]);
+    grunt.registerTask('server', ['express', 'watch']); // start live reload
 
-    grunt.registerTask("default",["jshint", "browserify"]);
+    grunt.registerTask("default", ["jshint", "browserify"]);
 };

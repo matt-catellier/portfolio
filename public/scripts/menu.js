@@ -1,6 +1,7 @@
 /**
  * Created by matthewcatellier on 2016-03-01.
  */
+
 var scale = require("./scale");
 // MENU
 var menu = $('#menu');
@@ -10,8 +11,12 @@ var a = $('.main > nav ul a');
 var navBox = $('.main > #nav-box');
 var originalHeight = navBox.height();
 
-scale.zero({'div': nav});
-nav.css({'display': 'block' });
+scale.zero({
+    'div': nav
+});
+nav.css({
+    'display': 'block'
+});
 
 clicked = false;
 menu.click(function() {
@@ -41,15 +46,21 @@ menu.click(function() {
 
 // need to resize the font too...
 $(window).resize(function() {
-   makeWindowHeight(ul);
+    makeWindowHeight(ul);
     if($(window).height() < 500) {
-        a.css({'font-size:': '7.0vh' });
+        a.css({
+            'font-size:': '7.0vh'
+        });
     } else {
-        a.css({'font-size': '5.0vh' });
+        a.css({
+            'font-size': '5.0vh'
+        });
     }
 });
 
 function makeWindowHeight(div) {
     vph = $(window).height();
-    div.css({'height': vph + 'px'});
+    div.css({
+        'height': vph + 'px'
+    });
 }
