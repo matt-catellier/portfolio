@@ -4,8 +4,9 @@
     "description": "personal portfolio for matthew catellier built using jQuery and node.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node_modules/.bin/httpster -p 3000 -d ./public/",
-        "build": "node_modules/.bin/grunt"
+        "dev": "node_modules/.bin/grunt server",
+        "prod": "node_modules/.bin/httpster -p 3000 -d ./public/"
+
     },
     "repository": {
         "type": "git",

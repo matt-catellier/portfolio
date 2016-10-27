@@ -1,24 +1,24 @@
 .welcome {
-	margin-top: 50px;
-	margin-left: 7%;
-	text-align: left;	
+    margin-top: 50px;
+    margin-left: 7%;
+    text-align: left;
 }
 
 .welcome:hover {
-	cursor: hand;
+    cursor: hand;
 }
 
 @media (min-width: 1200px) {
-	.welcome {
-		margin-top: 20px;
-	}
+    .welcome {
+        margin-top: 20px;
+    }
 }
 
-.welcome h1{
-	margin-bottom: 20px;
+.welcome h1 {
+    margin-bottom: 20px;
 }
 
 .welcome h2 {
-	margin-top: 4px;
-	margin-bottom: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }

@@ -57,11 +57,10 @@ var expBlock= $('#portfolio-block');
 var expIcon = $('.experience-icon i');
 expBlock.mouseenter( function() { // enlarge effect
 	expIcon
-		.transition({scale: 1.2}, 200, 'ease')
-		.transition({scale: 0.8}, 300, 'ease')
-		.transition({scale: 1.1}, 200, 'ease')
-		.transition({scale: 0.9}, 300, 'ease')
-		.transition({scale: 1}, 300, 'ease');
+		.transition({ rotate: '30deg', rotateX: '180deg',  duration: 500 })
+		.transition({ rotate: '0deg', rotateX: '0deg',  duration: 500 })
+		.transition({ rotate: '-30deg', rotateX: '-180deg',  duration: 500 })
+		.transition({ rotate: '0deg', rotateX: '0deg',  duration: 500 });
 });
 
 // DIDNT LIKE IT BEUCASE THERE ARE 2 OF THESE DIVS, ONE OF WHICH I HIDE
