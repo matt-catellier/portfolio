@@ -30,6 +30,11 @@
         <link rel="stylesheet" href="styles/socail.css">
 
         <script src="build/app.js" defer></script>
+        <style>
+            svg {
+                display: none;
+            }
+        </style>
 
     </head>
 
@@ -158,6 +163,32 @@
                 <p>Copyright © Matt Catellier 2016.</p>
             </div>
         </div>
+        <!-- Edit this and the preview will update automatically. -->
+        <svg xmlns='http://www.w3.org/2000/svg' width='56' height='100'>
+            <rect width='56' height='100' fill='#333b7b'/>
+            <path d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='#127486' stroke-width='4'/>
+            <path d='M28 0L28 34L0 50L0 84L28 100L56 84L56 50L28 34' fill='none' stroke='#127486' stroke-width='4'/>
+        </svg>
+        <script>
+            // Encode an SVG element as a base64 data uri.
+            function svgToBase64Image(svgElement) {
+                var div = document.createElement('div');
+                div.appendChild(svgElement.cloneNode(true));
+                var b64 = window.btoa(div.innerHTML);
+                return 'data:image/svg+xml;base64,' + b64;
+            }
+            var svgs = document.getElementsByTagName('svg');
+            var urls = [];
+            for (var i = 0; i < svgs.length; i++)
+                urls.push('url("' + svgToBase64Image(svgs[i]) + '")');
+            var url = urls.join(',');
+            var divs = document.getElementsByClassName('pattern');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.background = url;
+            }
+            // .background = url;
+            // document.body.style.background = url;
+        </script>
     </body>
 
 </html>
