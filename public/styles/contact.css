@@ -1,20 +1,19 @@
-.wrapper .left-column {
-}
+.wrapper .left-column {}
 
 .left-column .write-up {
     text-align: left;
 }
 
 .left-column, .right-column {
-    padding: 60px 40px;
+    padding: 60px 20px;
     overflow-y: auto;
 }
 
-.left-column > div, .left-column > h1 {
+.left-column>div, .left-column>h1 {
     text-align: center;
 }
 
-.left-column > h4 {
+.left-column>h4 {
     margin-top: 0px;
     margin-bottom: 20px;
     text-align: center;
@@ -35,9 +34,9 @@
     border-bottom: 1px solid #999;
 }
 
-
 #info-heading {
-    margin-top: 10px;;
+    margin-top: 10px;
+    ;
 }
 
 .write-up h4 {
@@ -46,7 +45,6 @@
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
 }
-
 
 .contact-info {
     margin-bottom: 15px;
@@ -65,7 +63,7 @@ form {
     text-align: left;
 }
 
-form > div {
+form>div {
     display: inline-block;
     padding: 10px;
 }
@@ -79,18 +77,26 @@ form textarea {
     margin-top: 10px;
 }
 
+
 /* socail links */
 
 .contact-info p {
     font-weight: bold;
 }
- 
+
+
 /*.linked i  {*/
-    /*position: relative;*/
-    /*right: -15px;*/
+
+
+/*position: relative;*/
+
+
+/*right: -15px;*/
+
+
 /*}*/
 
-.phone i  {
+.phone i {
     position: relative;
     top: -5px;
 }

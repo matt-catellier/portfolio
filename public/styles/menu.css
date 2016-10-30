@@ -1,4 +1,4 @@
-.box{
+.box {
     opacity: 0.8;
     background: #708090;
     border-radius: 1px;
@@ -15,10 +15,9 @@
     position: relative;
     display: inline-block;
     clear: both;
-    margin: 10px;
 }
 
-.main nav{
+.main nav {
     position: fixed;
     top: 40px;
     left: 40px;
@@ -47,14 +46,12 @@
     cursor: pointer;
 }
 
-
-.main #menu > i {
+.main #menu>i {
     font-size: 20px;
     position: absolute;
     top: -40px;
     left: -10px;
 }
-
 
 #nav-box {
     z-index: 1;
@@ -82,7 +79,7 @@ nav {
 nav ul {
     min-height: 400px;
     position: absolute;
-    top: 60px;
+    top: 40px;
     margin-top: 5.0vh;
     display: block;
     width: 100%;
@@ -110,6 +107,4 @@ nav a:hover {
     background: #708090;
     text-decoration: none;
     color: inherit;
-
 }
-

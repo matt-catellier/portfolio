@@ -7,7 +7,6 @@ p {
     margin-bottom: 10px;
 }
 
-
 #about-block {
     background: #333b7b;
     color: #FFF;
@@ -23,10 +22,10 @@ p {
 }
 
 .left-column, .right-column {
-    padding: 60px 40px;
+    padding: 60px 20px;
 }
 
-.left-column  h1 {
+.left-column h1 {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 8px;
@@ -38,7 +37,6 @@ p {
     text-align: center;
 }
 
-
 .left-column .heading img {
     height: 300px;
     border-radius: 4px;
@@ -46,7 +44,6 @@ p {
     -moz-border-radius: 4px;
     margin-bottom: 10px;
 }
-
 
 .wrapper .right-column {
     padding-bottom: 50px;
@@ -56,18 +53,15 @@ p {
     padding-bottom: 40px;
 }
 
-
-.right-column  h1 {
+.right-column h1 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
 
 .right-column .col-xs-12 {
     padding-left: 0;
     margin-top: 10px;
 }
-
 
 .skills {
     margin-left: 5%;
@@ -76,7 +70,6 @@ p {
     width: 100%;
     max-width: 400px;
 }
-
 
 .skill {
     display: inline-block;
@@ -92,6 +85,3 @@ p {
     background: #333b7b;
     color: #FFF;
 }
-
-
-

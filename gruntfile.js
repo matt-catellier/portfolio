@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             scripts: {
-                files: ["public/scripts/*.js", "!public/scripts/windowResize.js"],
+                files: ["public/scripts/*.js", "!public/scripts/windowResize.js", "public/*.html", "public/styles/*.cs"],
                 tasks: ["hint", "browserify"]
             }
             // css: {

@@ -1,36 +1,36 @@
 .left-column, .right-column {
-	height: 600px;
-	overflow: hidden;
-	width: 400px;
-	position: relative;
+    height: 600px;
+    overflow: hidden;
+    width: 400px;
+    position: relative;
 }
 
 .project {
-	height: 600px;
-	position: relative;
+    height: 600px;
+    position: relative;
 }
 
 .left-column .project {
-	top: -600px;
+    top: -600px;
 }
 
 .switches {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
 }
 
 .switch-up, .switch-down {
-	height: 150px;
-	z-index: 5;
-	text-align: center;
+    height: 150px;
+    z-index: 5;
+    text-align: center;
 }
 
-.switch-up:hover , .switch-down:hover {
-	opacity: 0.8;
+.switch-up:hover, .switch-down:hover {
+    opacity: 0.8;
 }
 
 .switch-up i, .switch-down i {
-	font-size: 100px;	
+    font-size: 100px;
 }
