@@ -13,7 +13,6 @@ module.exports = function(grunt) {
             client: {
                 src: [
                     "public/scripts/effects.js",
-                    "public/scripts/windowResize.js",
                     "public/scripts/menu.js",
                     "public/scripts/switch-effect.js"
                 ],
@@ -25,7 +24,7 @@ module.exports = function(grunt) {
                 livereload: true
             },
             scripts: {
-                files: ["public/scripts/*.js"],
+                files: ["public/scripts/*.js", "!public/scripts/windowResize.js"],
                 tasks: ["hint", "browserify"]
             }
             // css: {
