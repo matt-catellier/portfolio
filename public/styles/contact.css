@@ -27,16 +27,18 @@
     margin-bottom: 20px;
 }
 
-.write-up h4 {
-    text-align: center;
-    padding: 8px;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+.right-column h4 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .write-up p {
+        padding: 0 20px;
+    }
 }
 
 #info-heading {
     margin-top: 10px;
-    ;
 }
 
 .write-up h4 {
@@ -56,6 +58,12 @@
 
 .form-container {
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        margin-top: 40px;
+    }
 }
 
 form {

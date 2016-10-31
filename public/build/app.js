@@ -151,6 +151,32 @@ function makeWindowHeight(div) {
     });
 }
 
+
+$('.x-icon').click(function() {
+    if(!clicked) {
+        scale.expandMenu(navBox, 1400, 'ease');
+        scale.one({
+            'div': nav,
+            'time': 1500,
+            'effect': 'ease'
+        });
+
+        clicked = true;
+    } else {
+        scale.zero({
+            'div': nav,
+            'time': 1400,
+            'effect': 'ease'
+        });
+        scale.one({
+            'div': navBox,
+            'time': 1500,
+            'effect': 'ease'
+        }); // retract menu
+        clicked = false;
+    }
+});
+
 },{"./scale":3}],3:[function(require,module,exports){
 /**
  * Created by matthewcatellier on 2016-03-01.

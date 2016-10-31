@@ -28,6 +28,26 @@
         <script src="build/app.js" defer></script>
         <script>
             $(function() {
+                resizePanel();
+                $(window).resize(function() {
+                    resizePanel();
+                });
+            });
+
+            function resizePanel() {
+                var rightColumn = $('.right-column');
+                var leftColumn = $('.left-column');
+                if ($(window).width() >= 768) {
+                    var height = leftColumn.height();
+                    rightColumn.height(height);
+                } else {
+                    rightColumn.height('auto');
+                    leftColumn.height('auto');
+                }
+            }
+        </script>
+        <!-- <script>
+            $(function() {
                 var height = $('.right-column').height();
                 var leftColumn = $('.left-column');
                 leftColumn.height(height);
@@ -37,7 +57,7 @@
                     leftColumn.height(height);
                 });
             });
-        </script>
+        </script> -->
         <meta name="viewport" content="width=device-width">
     </head>
 
@@ -52,11 +72,12 @@
                         <i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
                     </div>
                     <nav class="clearfix">
+                        <span class="x-icon"><i class="fa fa-times" aria-hidden="true"></i></span>
                         <ul class="clearfix">
                             <li><a href="index.html"><h1>HOME</h1></a></li>
-                            <li><a href="about.html"><h1>ABOUT ME</h1></a></li>
-                            <li><a href="portfolio.html"><h1>PAST PROJECTS</h1></a></li>
-                            <li><a href="contact.html"><h1>CONTACT INFO</h1></a></li>
+                            <li><a href="about.html"><h1>ABOUT</h1></a></li>
+                            <li><a href="portfolio.html"><h1>EXPERIENCE</h1></a></li>
+                            <li><a href="contact.html"><h1>CONTACT </h1></a></li>
                         </ul>
                     </nav>
                     <div class="columns col-xs-12">
@@ -127,18 +148,13 @@
                         <div class="right-column clearfix col-xs-12 col-sm-6 darkblue">
                             <div class="write-up">
                                 <h4>WANT TO GET IN TOUCH?</h4>
-                                <p> Send me an email with any ideas or questions you may have. I look forward to hearing from you. </p>
+                                <p> Send me an email with any ideas or questions you may have.</p>
+                                <p> I look forward to hearing from you. </p>
                             </div>
                             <div class="clearfix form-container">
                                 <form class="clearfix">
                                     <div>
-                                        <label>Name:</label><input type="text" id="name">
-                                    </div> <br />
-                                    <div>
                                         <label for="email">Email:</label><input type="text" id="email">
-                                    </div> <br />
-                                    <div>
-                                        <label for="website">Website:</label><input type="text" id="website">
                                     </div> <br />
                                     <div class="message-container">
                                         <label for="message">Message:</label>

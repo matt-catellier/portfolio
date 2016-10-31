@@ -24,19 +24,27 @@
         <link rel="stylesheet" href="styles/about.css">
 
         <script src="build/app.js" defer></script>
-        <meta name="viewport" content="width=device-width">
         <script>
             $(function() {
-                var height = $('.right-column').height() + 10;
-                var leftColumn = $('.left-column');
-                leftColumn.height(height);
-
+                resizePanel();
                 $(window).resize(function() {
-                    height = $('.right-column').height() + 10;
-                    leftColumn.height(height);
+                    resizePanel();
                 });
             });
+
+            function resizePanel() {
+                var rightColumn = $('.right-column');
+                var leftColumn = $('.left-column');
+                if ($(window).width() >= 768) {
+                    var height = leftColumn.height() - 10;
+                    rightColumn.height(height);
+                } else {
+                    rightColumn.height('auto');
+                    leftColumn.height('auto');
+                }
+            }
         </script>
+        <meta name="viewport" content="width=device-width">
     </head>
 
     <body>
@@ -50,60 +58,61 @@
                         <i class="fa fa-bars" aria-hidden="true" title="Skip to main navigation"></i>
                     </div>
                     <nav class="clearfix">
+                        <span class="x-icon"><i class="fa fa-times" aria-hidden="true"></i></span>
                         <ul class="clearfix">
                             <li><a href="index.html"><h1>HOME</h1></a></li>
-                            <li><a href="about.html"><h1>ABOUT ME</h1></a></li>
-                            <li><a href="portfolio.html"><h1>PAST PROJECTS</h1></a></li>
-                            <li><a href="contact.html"><h1>CONTACT INFO</h1></a></li>
+                            <li><a href="about.html"><h1>ABOUT</h1></a></li>
+                            <li><a href="portfolio.html"><h1>EXPERIENCE</h1></a></li>
+                            <li><a href="contact.html"><h1>CONTACT </h1></a></li>
                         </ul>
                     </nav>
                     <div class="columns col-xs-12">
                         <div class="left-column clearfix col-xs-12 col-sm-6 white">
                             <div class="heading">
                                 <img src="images/headshot.jpg" alt="professional headshot">
-                                <h1>WHO AM I?</h1>
+                                <h1>WHO I AM</h1>
                             </div>
-                            <p>I am a technically minded individual, who is passionate about learning new technologies and software development. Full stack developer with experience using industry leading technologies. Constantly looking to improve myself
-                                and the world around me. Willing to go above and beyond to do so</p>
-                            <p>Currently attending BCIT for the Software System Developer (Web Programmer) Certificate. It is an intense 9 month program where they introduce several client and server side tools/software's used to develop enterprise scale
-                                business applications.</p>
-                            <p>This site is host to the some of the projects that I have contributed to and is also host to a personal blog about the various technologies/softwares that I use.</p>
+                            <p>Born and raised in Vancouver, Matt is a particularly hard working individual who has been practicing software development for the past 3 years.
+                            </p>
+                            <p> Recently his focus has been on learning Node.js, React.js and ES6. He enjoys working in teams, and collaborating to solve problems with new and exciting technology.
+                            </p>
+                            <p>His past work experience has been primarily with smaller companies where he has worn many hats, but identifies as full-stack developer. When he is not working, he can be found on the beach, and/or playing his guitar.
+                            </p>
                         </div>
 
                         <div class="right-column clearfix col-xs-12 col-sm-6 light-grey">
-                            <h1>WHAT I DO </h1>
+                            <h1> WHAT I DO </h1>
                             <div class="col-xs-12">
                                 <h2> Front End </h2>
-                                <p>Enjoy designing rich, and resposive web applications with engaging and interactive content.</p>
+                                <p>Enjoy creating rich, and responsive user experience.</p>
                                 <div class="skills">
                                     <span class="skill teal">jQuery</span>
-                                    <span class="skill teal">morris-charts.js</span>
-                                    <span class="skill teal">Angular</span>
-                                    <span class="skill teal">Angular2</span>
-                                    <span class="skill teal"> CSS </span> <span class="skill teal">SASS </span>
+                                    <span class="skill teal">Vue.js</span><span class="skill teal">React.js</span><span class="skill teal">Angular2</span>
+                                    <span class="skill teal"> CSS </span> <span class="skill teal"> SASS/LESS </span>
                                     <span class="skill teal">Bootstrap</span>
                                 </div>
                             </div>
                             <div class="col-xs-12">
                                 <h2> Back End </h2>
-                                <p> Familiar with various server side technologies and frameworks. Strong understanding of SQL and data-driven design.</p>
+                                <p> Have worked with many server-side technologies, strong understanding of SQL and OOP.</p>
                                 <div class="skills">
-                                    <span class="skill grey"> Java </span> <span class="skill grey">C#</span>
-                                    <span class="skill grey">ASP.NET</span><span class="skill grey"> SQL </span>
+                                    <span class="skill grey"> Java </span>
+                                    <span class="skill grey">C#</span> <span class="skill grey">ASP.NET</span>
+                                    <span class="skill grey"> SQL </span> <span class="skill grey"> NoSQL </span>
                                     <span class="skill grey"> PHP</span> <span class="skill grey">Laravel </span>
-                                    <span class="skill grey"> Terminal </span> <span class="skill grey"> Git Workflow</span>
+                                    <span class="skill grey"> Node.js </span> <span class="skill grey"> Git </span>
                                 </div>
                             </div>
                             <div class="col-xs-12">
                                 <h2> Mobile </h2>
-                                <p> Have experience working in native environments for both iOS and Android application aswell leading hybrid technologies. </p>
+                                <p> Have experience in native environments and with leading hybrid technologies. </p>
                                 <div class=" skills ">
-                                    <span class="skill darkblue"> Swift </span> <span class="skill darkblue">Xcode</span><span class="skill darkblue">Ionic2 </span>
-                                    <span class="skill darkblue"> Android Studio </span>
+                                    <span class="skill darkblue"> Android Studio </span> <span class="skill darkblue">Xcode</span> <span class="skill darkblue"> Swift </span>
+                                    <span class="skill darkblue">Ionic2 </span> <span class="skill darkblue"> React Native </span> <span class="skill darkblue"> Native Script </span>
                                 </div>
                             </div>
                             <div class="col-xs-12">
-                                <p> I enjoy all areas of development, from the database all the way to the User Experience. What ever your projects needs, I am available for freelance, contract or direct client projects.</p>
+                                <p> I enjoy working in all areas of development. What ever your projects needs, I am available for freelance, contract or direct client projects.</p>
                                 <p>Feel free to <a href="contact.html">send me and email here</a>.
                             </div>
                         </div>
@@ -116,5 +125,15 @@
             </div>
         </div>
     </body>
+
+</html>
+</div>
+</body>
+
+</html>
+
+</html>
+</div>
+</body>
 
 </html>
