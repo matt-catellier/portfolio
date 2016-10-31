@@ -1,30 +1,31 @@
 {
-    "name": "portfolio-mcatellier",
-    "version": "1.0.0",
-    "description": "personal portfolio for matthew catellier built using jQuery and node.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "node_modules/.bin/grunt server",
-        "prod": "node_modules/.bin/httpster -p 3000 -d ./public/"
-
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://mattcatellier@bitbucket.org/mattcatellier/portfolio.git"
-    },
-    "author": "Matt Catellier",
-    "license": "UNLICENSED",
-    "homepage": "https://bitbucket.org/mattcatellier/portfolio#readme",
-    "dependencies": {
-        "grunt": "^1.0.1",
-        "httpster": "^1.0.3"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.0",
-        "grunt-browserify": "^5.0.0",
-        "grunt-contrib-jshint": "^1.0.0",
-        "grunt-contrib-watch": "^1.0.0",
-        "grunt-express": "^1.4.1",
-        "grunt-parallel": "^0.5.1"
-    }
+  "name": "portfolio-mcatellier",
+  "version": "1.0.0",
+  "description": "personal portfolio for matthew catellier built using jQuery and node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/grunt server",
+    "prod": "node_modules/.bin/httpster -p 3000 -d ./public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mattcatellier@bitbucket.org/mattcatellier/portfolio.git"
+  },
+  "author": "Matt Catellier",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/mattcatellier/portfolio#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "httpster": "^1.0.3",
+    "nodemailer": "^2.6.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-parallel": "^0.5.1"
+  }
 }
