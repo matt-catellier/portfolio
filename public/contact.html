@@ -32,6 +32,11 @@
                 $(window).resize(function() {
                     resizePanel();
                 });
+                $('#submitBtn').click(function(e) {
+                    e.preventDefault();
+                    validate();
+                    postEmail();
+                })
             });
 
             function resizePanel() {
@@ -45,19 +50,20 @@
                     leftColumn.height('auto');
                 }
             }
-        </script>
-        <!-- <script>
-            $(function() {
-                var height = $('.right-column').height();
-                var leftColumn = $('.left-column');
-                leftColumn.height(height);
 
-                $(window).resize(function() {
-                    height = $('.right-column').height();
-                    leftColumn.height(height);
+            function validate() {
+
+            }
+
+            function postEmail() {
+                $.post("/email", {
+                    name: "John",
+                    time: "2pm"
+                }).done(function(res) {
+                    console.log(res);
                 });
-            });
-        </script> -->
+            }
+        </script>
         <meta name="viewport" content="width=device-width">
     </head>
 
@@ -74,10 +80,10 @@
                     <nav class="clearfix">
                         <span class="x-icon"><i class="fa fa-times" aria-hidden="true"></i></span>
                         <ul class="clearfix">
-                            <li><a href=""><h1>HOME</h1></a></li>
-                            <li><a href="about"><h1>ABOUT</h1></a></li>
-                            <li><a href="experience"><h1>EXPERIENCE</h1></a></li>
-                            <li><a href="contact"><h1>CONTACT </h1></a></li>
+                            <li><a href="/"><h1>HOME</h1></a></li>
+                            <li><a href="/about"><h1>ABOUT</h1></a></li>
+                            <li><a href="/experience"><h1>EXPERIENCE</h1></a></li>
+                            <li><a href="/contact"><h1>CONTACT </h1></a></li>
                         </ul>
                     </nav>
                     <div class="columns col-xs-12">
@@ -159,7 +165,7 @@
                                     <div class="message-container">
                                         <label for="message">Message:</label>
                                         <textarea name="" id="message" cols="30" rows="10"></textarea>
-                                        <button type="submit" class="btn"> SEND </button>
+                                        <button type="submit" id="submitBtn" class="btn"> SEND </button>
                                     </div>
                                 </form>
                             </div>
