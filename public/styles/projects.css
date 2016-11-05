@@ -1,13 +1,28 @@
 .left-column, .right-column {
     height: 600px;
     overflow: hidden;
-    width: 400px;
     position: relative;
 }
 
 .project {
     height: 600px;
     position: relative;
+    text-align: center;
+}
+
+.project p {
+    text-align: left;
+}
+
+.project .view-site {
+    display: inline-block;
+    padding: 4px 30px;
+    color: #FFF;
+    border: 2px solid #333b7b;
+    margin: -10px 0 10px 0;
+    background: #333b7b;
+
+
 }
 
 .left-column .project {
@@ -33,4 +48,28 @@
 
 .switch-up i, .switch-down i {
     font-size: 100px;
+}
+
+.visible-xs .switch-up,.visible-xs .switch-down {
+    height: 100px;
+}
+
+.visible-xs .switch-up i,.visible-xs .switch-down i {
+    font-size: 70px;
+}
+
+
+h1 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    text-transform: uppercase;
 }

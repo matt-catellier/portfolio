@@ -13,7 +13,7 @@
 .main {
     text-align: center;
     position: relative;
-    display: inline-block;
+    display: block;
     clear: both;
 }
 

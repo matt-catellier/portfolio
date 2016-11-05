@@ -3,7 +3,7 @@ var express = require('express'),
     bodyParser = require('body-parser');
 
 var path = require('path');
-var nodemailer = require('nodemailer');
+// var nodemailer = require('nodemailer');
 
 var app = express();
 app.disable(helmet());
@@ -35,16 +35,16 @@ app.get('/contact', function(req, res) {
     res.sendFile(path.join(__dirname, 'public', 'contact.html'));
 });
 app.post('/email', function(req,res) {
-    var transporter = nodemailer.createTransport();
-
-    transporter.sendMail({
-       from: 'sender@address',
-       to: 'receiver@address',
-       subject: 'hello',
-       html: '<b>hello world!</b>'
-       text: 'hello world!'
-    });
-    transporter.close();
+    // var transporter = nodemailer.createTransport();
+    //
+    // transporter.sendMail({
+    //    from: 'sender@address',
+    //    to: 'receiver@address',
+    //    subject: 'hello',
+    //    html: '<b>hello world!</b>',
+    //    text: 'hello world!'
+    // });
+    // transporter.close();
     res.json(req.body);
 });
 app.get('/*', function(req, res) {
