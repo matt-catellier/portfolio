@@ -6,19 +6,17 @@
 	var rightArea = $('.right-column');
 
 	// global variables to track the position
-	step = 620;
 	leftPos=0;
 	rightPos=0;
 
 	page = 1;
 	pages = 3;
 
-	var step;
+	var step = 0;
 	var tallest;
-
+	var firstRun= true;
 
 	setTallestStep();
-	console.log(step);
 	$(window).resize(function() {
 		setTallestStep();
     });
@@ -45,21 +43,36 @@
 		}
 	});
 
+
 	function setTallestStep() {
 		if ($(window).width() <= 767) {
 			var elementHeights = $('.write-up').map(function() {
 				return $(this).outerHeight();
 			}).get();
-			console.log(elementHeights);
 			tallest = Math.max.apply(Math, elementHeights);
-			// console.log(tallest);
-			$('.columns').height(tallest + 140); // 140 for switches
-			$('.write-up').height(tallest);
-			console.log(tallest);
-			step = -(tallest + 60);
+			// for extra padding
+			step = - (tallest + 70);
 		} else {
+			firstRun = true;
 			step = 620;
 			tallest = 620;
-			$('.columns').height(620);
+		}
+		setHeights();
+		//console.log(step);
+	}
+
+
+	function setHeights() {
+		if($(window).width() >= 767) {
+			$('.columns').height(tallest);
+			// $('.write-up').height(step);
+		} else {
+			if(firstRun) {
+				$('.columns').height(tallest + 140);
+				firstRun = false;
+			} else {
+				$('.columns').height(tallest);
+			}
+			$('.write-up').height(tallest);
 		}
 	}

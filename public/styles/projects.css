@@ -110,7 +110,7 @@ img {
 }
 
 .write-up {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
 }
 
 @media (min-width: 768px) {
@@ -121,7 +121,7 @@ img {
         height: 620px;
     }
     .left-column .project {
-        top: -620px;
+        top: -1240px;
     }
     h2 {
         font-size: 44px;
@@ -130,9 +130,13 @@ img {
         height: 620px;
         overflow-y: hidden;
     }
+
+    .columns h2 {
+        font-size: 46px;
+    }
     .wrapper .left-column {
         text-align: center;
-        padding-top: 125px;
+        padding-top: 105px;
     }
     .right-column {
         padding-top: 100px;
