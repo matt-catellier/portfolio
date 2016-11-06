@@ -7,7 +7,7 @@
 	var rightArea = $('.right-column');
 
 	// global variables to track the position
-	step = 600;
+	// step = 720;
 	leftPos=0;
 	rightPos=0;
 
@@ -15,6 +15,7 @@
 	pages = 2;
 
 	switchUp.on('click', function() {
+		step = $(this).prev().height();
 		console.log('up');
 		if(page < pages) {
 			console.log('page1');
@@ -27,6 +28,7 @@
 	});
 
 	switchDown.on('click', function() {
+		step = $(this).next().height();
 		console.log('down');
 		if(page > 1) {
 			console.log('page2');

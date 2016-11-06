@@ -25,18 +25,6 @@
         <link rel="stylesheet" href="styles/projects.css">
 
         <script src="build/app.js" defer></script>
-        <script>
-            $(function() {
-                var height = $('.right-column').height() + 10;
-                var leftColumn = $('.left-column');
-                leftColumn.height(height);
-
-                $(window).resize(function() {
-                    height = $('.right-column').height() + 10;
-                    leftColumn.height(height);
-                });
-            });
-        </script>
         <meta name="viewport" content="width=device-width">
     </head>
 
@@ -62,24 +50,54 @@
                     <div class="columns col-xs-12">
                         <div class="left-column clearfix col-xs-12 col-sm-6 white">
                             <div class='project write-up'>
-                                <h2>  Project 2 - Write-up </h2>
-                                <p> This is some text about write-up. This is some text about write-up. This is some text about write-up. This is some text about write-up. This is some text about write-up. This is some text about write-up. </p>
+                                <div class='visible-xs'>
+                                    <img src="/images/seabreeze-connect.png" alt="Seabreeze Connect screenshots"/>
+                                </div>
+                                <h2> Seabreeze Connect </h2>
+                                <h1>
+                                    <span class="skill teal"> Angular </span>
+                                    <span class="skill teal"> Material Design </span>
+                                    <span class="skill teal"> SASS </span> <br />
+                                    <span class="skill grey"> Git </span>
+                                    <span class="skill grey"> Laravel </span>
+                                    <span class="skill grey"> MySQL </span>
+                                </h1>
+                                <div class="view-site">
+                                    <a href="http://seabreezeconnect.com/" class="view-site"> VIEW SITE </a>
+                                </div>
+
+                                <p> Worked with product owner to identify and prioritize key features.
+                                    Was responsible for database design, security, testing, information architecture.
+                                    Created responsive web app using Angular Material Design and Laravel.
+                                 </p>
+                                <div class="switches visible-xs">
+                                    <div class="switch-up col-xs-6 teal">
+                                        <i class="fa fa-arrow-up center" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="switch-down col-xs-6 darkblue">
+                                        <i class="fa fa-arrow-down center" aria-hidden="true"></i>
+                                    </div>
+                                </div>
                             </div>
                             <div class='project write-up'>
                                 <div class='visible-xs'>
-                                    <iframe src="http://ami.responsivedesign.is/?url=http://artvancouver.net/">
-                                      <p>Your browser does not support iframes.</p>
-                                    </iframe>
+                                    <img src="/images/art-vancouver.png" alt="Art!Vancouver screenshots"/>
                                 </div>
                                 <h2>  Art! Vancouver </h2>
                                 <h1>
                                     <span class="skill teal">jQuery</span>
                                     <span class="skill teal"> CSS </span>
-                                    <span class="skill teal"> PHP</span>
+                                    <span class="skill teal"> Bootstrap </span> <br />
+                                    <span class="skill grey"> Wordpress </span>
+                                    <span class="skill grey"> DevOps</span>
                                 </h1>
-                                <a href="http://artvancouver.net/" class="view-site"> VIEW SITE </a>
-                                <p> Created a custom child theme using Wordpress, to add in a mobile responsive
+                                <div class="view-site">
+                                    <a href="http://artvancouver.net/" class="view-site"> VIEW SITE </a>
+                                </div>
+
+                                <p> Created a child theme using Wordpress, to add in a mobile responsive
                                      nav-bar and improve the overall usability of the app.</p>
+
                             </div>
                             <div class="switches visible-xs">
                                 <div class="switch-up col-xs-6 teal">
@@ -100,11 +118,11 @@
                                 </div>
                             </div>
                             <div class='project'>
-                                <iframe src="http://ami.responsivedesign.is/?url=http://artvancouver.net/">
-                                  <p>Your browser does not support iframes.</p>
-                                </iframe>
+                                <img src="/images/art-vancouver.png" alt="Art!Vancouver screenshots"/>
                             </div>
-                            <div class='project'> Project 2 - image </div>
+                            <div class='project'>
+                                <img src="/images/seabreeze-connect.png" alt="Seabreeze Connect screenshots"/>
+                            </div>
 
                         </div>
                     </div>

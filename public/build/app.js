@@ -259,7 +259,7 @@ $('.x-icon').click(function() {
 	var rightArea = $('.right-column');
 
 	// global variables to track the position
-	step = 600;
+	step = 620;
 	leftPos=0;
 	rightPos=0;
 
