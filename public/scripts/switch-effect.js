@@ -11,17 +11,18 @@
 	rightPos=0;
 
 	page = 1;
-	pages = 2;
+	pages = 3;
 
 	var step;
 	var tallest;
 
 
 	setTallestStep();
+	console.log(step);
 	$(window).resize(function() {
 		setTallestStep();
     });
-	
+
 	switchUp.on('click', function() {
 		if(page < pages) {
 			// console.log('page1');
@@ -49,14 +50,13 @@
 			var elementHeights = $('.write-up').map(function() {
 				return $(this).outerHeight();
 			}).get();
-			// console.log(elementHeights);
+			console.log(elementHeights);
 			tallest = Math.max.apply(Math, elementHeights);
 			// console.log(tallest);
 			$('.columns').height(tallest + 140); // 140 for switches
-			$('.write-up').each(function(i, val) {
-				val.height = tallest + 140;
-			});
-			step =  - tallest;
+			$('.write-up').height(tallest);
+			console.log(tallest);
+			step = -(tallest + 60);
 		} else {
 			step = 620;
 			tallest = 620;
