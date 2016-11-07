@@ -56,6 +56,8 @@
             }
 
             function postEmail() {
+                alert("Mail server is temporarilty unavailable");
+                return;
                 $.post("/email", {
                     name: "John",
                     time: "2pm"
