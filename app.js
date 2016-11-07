@@ -29,7 +29,7 @@ app.get('/about', function(req, res) {
     res.sendFile(path.join(__dirname, 'public/pages', 'about.html'));
 });
 app.get('/experience', function(req, res) {
-    res.sendFile(path.join(__dirname, 'public/pages', 'portfolio.html'));
+    res.sendFile(path.join(__dirname, 'public/pages', 'experience.html'));
 });
 app.get('/contact', function(req, res) {
     res.sendFile(path.join(__dirname, 'public/pages', 'contact.html'));
