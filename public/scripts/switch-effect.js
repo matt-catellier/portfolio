@@ -51,11 +51,22 @@
 			}).get();
 			tallest = Math.max.apply(Math, elementHeights);
 			// for extra padding
-			step = - (tallest + 70);
+			if(!firstRun) {
+				step = - (tallest);
+				tallest = tallest - 70;
+				leftPos = (page - 1) * step;
+				// rightPos = step;
+			} else {
+				step = - (tallest + 70);
+			}
 		} else {
 			firstRun = true;
 			step = 620;
 			tallest = 620;
+			leftPos = 0;
+			rightPos = 0;
+			leftArea.find('.project').transition({ y: leftPos });
+			rightArea.find('.project').transition({ y: rightPos});
 		}
 		setHeights();
 		//console.log(step);
@@ -68,11 +79,10 @@
 			// $('.write-up').height(step);
 		} else {
 			if(firstRun) {
-				$('.columns').height(tallest + 140);
 				firstRun = false;
-			} else {
-				$('.columns').height(tallest);
 			}
+			$('.columns').height(tallest + 120);
 			$('.write-up').height(tallest);
+
 		}
 	}
