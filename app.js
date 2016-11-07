@@ -8,7 +8,7 @@ var path = require('path');
 var app = express();
 app.disable(helmet());
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -23,16 +23,16 @@ app.use(function(req,res,next) {
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public/pages', 'index.html'));
 });
 app.get('/about', function(req, res) {
-    res.sendFile(path.join(__dirname, 'public', 'about.html'));
+    res.sendFile(path.join(__dirname, 'public/pages', 'about.html'));
 });
 app.get('/experience', function(req, res) {
-    res.sendFile(path.join(__dirname, 'public', 'portfolio.html'));
+    res.sendFile(path.join(__dirname, 'public/pages', 'portfolio.html'));
 });
 app.get('/contact', function(req, res) {
-    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+    res.sendFile(path.join(__dirname, 'public/pages', 'contact.html'));
 });
 app.post('/email', function(req,res) {
     // var transporter = nodemailer.createTransport();
@@ -50,7 +50,6 @@ app.post('/email', function(req,res) {
 app.get('/*', function(req, res) {
     res.redirect('/');
 });
-
 
 
 app.listen(3000);
