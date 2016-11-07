@@ -73,7 +73,7 @@ img {
 
 .switch-up, .switch-down {
     height: 120px;
-    z-index: 5;
+    z-index: 0;
     text-align: center;
 }
 
