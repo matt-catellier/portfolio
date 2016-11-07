@@ -13,8 +13,7 @@ module.exports = function(grunt) {
             client: {
                 src: [
                     "public/scripts/effects.js",
-                    "public/scripts/menu.js",
-                    "public/scripts/switch-effect.js"
+                    "public/scripts/menu.js"
                 ],
                 dest: "public/build/app.js"
             }
