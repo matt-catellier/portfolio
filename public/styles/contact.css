@@ -85,6 +85,9 @@ form textarea {
     margin-top: 10px;
     color: black;
 }
+form input {
+    color: black;
+}
 
 
 /* socail links */
