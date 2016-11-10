@@ -111,8 +111,6 @@
                 $(window).resize(resizePanel);
                 function resizePanel() {
                     if ($(window).width() >= 768) {
-                        $('.right-column').height($('.left-column').height() - 10);
-                    } else if ($(window).width() > 750) {
                         $('.left-column').height($('.right-column').height() + 10);
                     } else {
                         $('.right-column').height('auto');
