@@ -26,46 +26,6 @@
         <link rel="stylesheet" href="../styles/contact.css">
 
         <script src="build/app.js" defer></script>
-        <script>
-            $(function() {
-                resizePanel();
-                $(window).resize(function() {
-                    resizePanel();
-                });
-                $('#submitBtn').click(function(e) {
-                    e.preventDefault();
-                    validate();
-                    postEmail();
-                })
-            });
-
-            function resizePanel() {
-                var rightColumn = $('.right-column');
-                var leftColumn = $('.left-column');
-                if ($(window).width() >= 768) {
-                    var height = leftColumn.height();
-                    rightColumn.height(height);
-                } else {
-                    rightColumn.height('auto');
-                    leftColumn.height('auto');
-                }
-            }
-
-            function validate() {
-
-            }
-
-            function postEmail() {
-                alert("Mail server is temporarilty unavailable");
-                return;
-                $.post("/email", {
-                    name: "John",
-                    time: "2pm"
-                }).done(function(res) {
-                    console.log(res);
-                });
-            }
-        </script>
         <meta name="viewport" content="width=device-width">
     </head>
 
@@ -180,6 +140,41 @@
                 <p> Copyright © Matt Catellier 2016.</p>
             </div>
         </div>
+        <script>
+            $(document).ready(resizePanel);
+            $(window).resize(resizePanel);
+            $('#submitBtn').click(function(e) {
+                e.preventDefault();
+                validate();
+                // postEmail();
+            })
+
+            function resizePanel() {
+                var rightColumn = $('.right-column');
+                var leftColumn = $('.left-column');
+                if ($(window).width() >= 768) {
+                    var height = leftColumn.height();
+                    rightColumn.height(height);
+                } else {
+                    rightColumn.height('auto');
+                    leftColumn.height('auto');
+                }
+            }
+
+            function validate() {
+                alert("Mail server is temporarilty unavailable.");
+                return;
+            }
+
+            function postEmail() {
+            $.post("/email", {
+                    name: "John",
+                    time: "2pm"
+                }).done(function(res) {
+                    console.log(res);
+                });
+            }
+        </script>
     </body>
 
 </html>
