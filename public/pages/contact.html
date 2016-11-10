@@ -143,23 +143,21 @@
         <script>
             $(document).ready(resizePanel);
             $(window).resize(resizePanel);
+            
+            function resizePanel() {
+                if ($(window).width() > 750) {
+                    $('.right-column').height($('.left-column').height());
+                }  else {
+                    $('.right-column').height('auto');
+                    $('.left-column').height('auto');
+                }
+            }
+
             $('#submitBtn').click(function(e) {
                 e.preventDefault();
                 validate();
                 // postEmail();
             })
-
-            function resizePanel() {
-                var rightColumn = $('.right-column');
-                var leftColumn = $('.left-column');
-                if ($(window).width() > 750) {
-                    var height = leftColumn.height();
-                    rightColumn.height(height);
-                }  else {
-                    rightColumn.height('auto');
-                    leftColumn.height('auto');
-                }
-            }
 
             function validate() {
                 alert("Mail server is temporarilty unavailable.");

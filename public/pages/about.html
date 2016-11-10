@@ -110,17 +110,13 @@
             $(window).resize(resizePanel);
 
             function resizePanel() {
-                var rightColumn = $('.right-column');
-                var leftColumn = $('.left-column');
                 if ($(window).width() >= 768) {
-                    var height = leftColumn.height() - 10;
-                    rightColumn.height(height);
+                    $('.right-column').height($('.left-column').height() - 10);
                 } else if ($(window).width() > 750) {
-                    var height = rightColumn.height() + 10;
-                    leftColumn.height(height);
+                    $('.left-column').height($('.right-column').height() + 10);
                 } else {
-                    rightColumn.height('auto');
-                    leftColumn.height('auto');
+                    $('.right-column').height('auto');
+                    $('.left-column').height('auto');
                 }
             }
         </script>
