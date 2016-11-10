@@ -109,13 +109,15 @@
             $(document).ready(resizePanel);
             $(window).resize(resizePanel);
 
-
             function resizePanel() {
                 var rightColumn = $('.right-column');
                 var leftColumn = $('.left-column');
                 if ($(window).width() >= 768) {
                     var height = leftColumn.height() - 10;
                     rightColumn.height(height);
+                } else if ($(window).width() > 750) {
+                    var height = rightColumn.height() + 10;
+                    leftColumn.height(height);
                 } else {
                     rightColumn.height('auto');
                     leftColumn.height('auto');

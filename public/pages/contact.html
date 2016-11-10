@@ -73,16 +73,16 @@
                                             //-->
                                     </script>
                                     <noscript>
-                                <a href="#"><i class="fa fa-mobile"></i></a>
-                            </noscript>
+                                        <a href="#"><i class="fa fa-mobile"></i></a>
+                                    </noscript>
                                 </div>
                                 <p>
                                     <script TYPE="text/javascript">
                                         document.write(phone);
                                     </script>
                                     <noscript>
-                                Please enable JavaScript to contact me.
-                            </noscript>
+                                        Please enable JavaScript to contact me.
+                                    </noscript>
                                 </p>
                             </div>
                             <div class="contact-info">
@@ -93,16 +93,16 @@
                                         document.write('<a href="mailto:' + emailE + '">' + '<i class="fa fa-envelope-o"></i>' + '</a>')
                                     </script>
                                     <noscript>
-                                <a href="#"><i class="fa fa-envelope-o"></i></a>
-                            </noscript>
+                                        <a href="#"><i class="fa fa-envelope-o"></i></a>
+                                    </noscript>
                                 </div>
                                 <p>
                                     <script TYPE="text/javascript">
                                         document.write(emailE);
                                     </script>
                                     <noscript>
-                                Please enable JavaScript to contact me.
-                            </noscript>
+                                    Please enable JavaScript to contact me.
+                                </noscript>
                                 </p>
                             </div>
                             <div class="write-up">
@@ -152,10 +152,10 @@
             function resizePanel() {
                 var rightColumn = $('.right-column');
                 var leftColumn = $('.left-column');
-                if ($(window).width() >= 768) {
+                if ($(window).width() > 750) {
                     var height = leftColumn.height();
                     rightColumn.height(height);
-                } else {
+                }  else {
                     rightColumn.height('auto');
                     leftColumn.height('auto');
                 }
