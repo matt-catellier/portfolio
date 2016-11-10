@@ -141,37 +141,38 @@
             </div>
         </div>
         <script>
-            $(document).ready(resizePanel);
-            $(window).resize(resizePanel);
-            
-            function resizePanel() {
-                if ($(window).width() > 750) {
-                    $('.right-column').height($('.left-column').height());
-                }  else {
-                    $('.right-column').height('auto');
-                    $('.left-column').height('auto');
+            $(document).ready(function() {
+                resizePanel();
+                $(window).resize(resizePanel);
+                function resizePanel() {
+                    if ($(window).width() > 750) {
+                        $('.right-column').height($('.left-column').height());
+                    }  else {
+                        $('.right-column').height('auto');
+                        $('.left-column').height('auto');
+                    }
                 }
-            }
 
-            $('#submitBtn').click(function(e) {
-                e.preventDefault();
-                validate();
-                // postEmail();
-            })
+                $('#submitBtn').click(function(e) {
+                    e.preventDefault();
+                    validate();
+                    // postEmail();
+                })
 
-            function validate() {
-                alert("Mail server is temporarilty unavailable.");
-                return;
-            }
+                function validate() {
+                    alert("Mail server is temporarilty unavailable.");
+                    return;
+                }
 
-            function postEmail() {
-            $.post("/email", {
-                    name: "John",
-                    time: "2pm"
-                }).done(function(res) {
-                    console.log(res);
-                });
-            }
+                function postEmail() {
+                $.post("/email", {
+                        name: "John",
+                        time: "2pm"
+                    }).done(function(res) {
+                        console.log(res);
+                    });
+                }
+            });        
         </script>
     </body>
 

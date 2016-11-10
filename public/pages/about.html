@@ -106,19 +106,20 @@
             </div>
         </div>
         <script>
-            $(document).ready(resizePanel);
-            $(window).resize(resizePanel);
-
-            function resizePanel() {
-                if ($(window).width() >= 768) {
-                    $('.right-column').height($('.left-column').height() - 10);
-                } else if ($(window).width() > 750) {
-                    $('.left-column').height($('.right-column').height() + 10);
-                } else {
-                    $('.right-column').height('auto');
-                    $('.left-column').height('auto');
+            $(document).ready(function() {
+                resizePanel();
+                $(window).resize(resizePanel);
+                function resizePanel() {
+                    if ($(window).width() >= 768) {
+                        $('.right-column').height($('.left-column').height() - 10);
+                    } else if ($(window).width() > 750) {
+                        $('.left-column').height($('.right-column').height() + 10);
+                    } else {
+                        $('.right-column').height('auto');
+                        $('.left-column').height('auto');
+                    }
                 }
-            }
+            });
         </script>
     </body>
 </html>
