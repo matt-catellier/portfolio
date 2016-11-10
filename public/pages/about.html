@@ -106,13 +106,9 @@
                 <p> Copyright © Matt Catellier 2016. </p>
             </div>
         </div>
-        <script>
-            $(function() {
-                $(window).resize(function() {
-                    resizePanel();
-                });
-                resizePanel();
-            });
+        <script>    
+            $(document).ready(resizePanel);
+            $(window).resize(resizePanel);
 
             function resizePanel() {
                 var rightColumn = $('.right-column');
