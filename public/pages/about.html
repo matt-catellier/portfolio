@@ -109,10 +109,11 @@
             $(document).ready(resizePanel);
             $(window).resize(resizePanel);
 
+
             function resizePanel() {
                 var rightColumn = $('.right-column');
                 var leftColumn = $('.left-column');
-                if ($(window).width() >= 767) {
+                if ($(window).width() >= 768) {
                     var height = leftColumn.height() - 10;
                     rightColumn.height(height);
                 } else {
