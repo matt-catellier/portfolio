@@ -25,26 +25,6 @@
 
         <script src="build/app.js" defer></script>
         <meta name="viewport" content="width=device-width">
-        <script>
-            $(function() {
-                $(window).resize(function() {
-                    resizePanel();
-                });
-                resizePanel();
-            });
-
-            function resizePanel() {
-                var rightColumn = $('.right-column');
-                var leftColumn = $('.left-column');
-                if ($(window).width() >= 767) {
-                    var height = leftColumn.height() - 10;
-                    rightColumn.height(height);
-                } else {
-                    rightColumn.height('auto');
-                    leftColumn.height('auto');
-                }
-            }
-        </script>
     </body>
     </head>
 
@@ -126,5 +106,24 @@
                 <p> Copyright © Matt Catellier 2016. </p>
             </div>
         </div>
+        <script>
+            $(function() {
+                $(window).resize(function() {
+                    resizePanel();
+                });
+                resizePanel();
+            });
 
+            function resizePanel() {
+                var rightColumn = $('.right-column');
+                var leftColumn = $('.left-column');
+                if ($(window).width() >= 767) {
+                    var height = leftColumn.height() - 10;
+                    rightColumn.height(height);
+                } else {
+                    rightColumn.height('auto');
+                    leftColumn.height('auto');
+                }
+            }
+        </script>
 </html>
