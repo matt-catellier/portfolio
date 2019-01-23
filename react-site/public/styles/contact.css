@@ -1,0 +1,143 @@
+.wrapper .left-column {}
+
+.left-column .write-up {
+    text-align: left;
+}
+
+.left-column, .right-column {
+    padding: 60px 20px;
+    overflow-y: auto;
+}
+
+.left-column>div, .left-column>h1 {
+    text-align: center;
+}
+
+.left-column>h4 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 8px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.left-column h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.right-column h4 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .write-up p {
+        padding: 0 20px;
+    }
+}
+
+#info-heading {
+    margin-top: 10px;
+}
+
+.write-up h4 {
+    text-align: center;
+    padding: 8px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.contact-info {
+    margin-bottom: 15px;
+}
+
+.right-column {
+    padding-top: 60px;
+}
+
+.form-container {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .form-container {
+        margin-top: 40px;
+    }
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form>div {
+    display: inline-block;
+    padding: 10px;
+}
+
+form label {
+    width: 100px;
+}
+
+form textarea {
+    width: 100%;
+    margin-top: 10px;
+    color: black;
+}
+form input {
+    color: black;
+}
+
+
+/* socail links */
+
+.contact-info p {
+    font-weight: bold;
+}
+
+
+/*.linked i  {*/
+
+
+/*position: relative;*/
+
+
+/*right: -15px;*/
+
+
+/*}*/
+
+.phone i {
+    position: relative;
+    top: -5px;
+}
+
+.linked a, .mail a {
+    font-size: 30px;
+}
+
+.phone a {
+    font-size: 50px;
+}
+
+.wrapper .right-column {
+    padding-bottom: 40px;
+}
+
+.right-column .write-up h4 {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+.right-column button {
+    display: block;
+    width: 100%;
+    background: white;
+    font-weight: bold;
+    color: #333;
+}
+
+.right-column button:hover {
+    background: #f7f7f7;
+}

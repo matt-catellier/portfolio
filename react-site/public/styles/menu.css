@@ -1,0 +1,158 @@
+.box {
+    opacity: 0.8;
+    background: #708090;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+    margin: 35% 35%;
+    width: 32px;
+    height: 32px;
+}
+
+.main {
+    text-align: center;
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+.main nav {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    width: 100%;
+    float: left;
+    z-index: 1;
+    display: none;
+}
+
+.main #menu {
+    display: inline-block;
+    position: fixed;
+    left: calc(50% - 35px);
+    z-index: 2;
+    color: white;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #708090;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+}
+
+.x-icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    padding: 32px;
+    position: absolute;
+    top: -28px;
+    right: 20px;
+    color: #FFF;
+    z-index: 5;
+}
+
+@media (min-width: 768px) {
+    .x-icon {
+        height: 32px;
+        width: 32px;
+        font-size: 32px;
+        top: -16px;
+        right: 46px;
+    }
+}
+
+.main #menu:hover {
+    cursor: pointer;
+}
+
+.main #menu>i {
+    font-size: 20px;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
+
+
+/*#nav-box {
+    z-index: 1;
+    margin: 0px;
+    left: calc(50% - 30px);
+    position: fixed;
+    top: 0;
+    width: 60px;
+}*/
+
+#nav-box {
+    z-index: 1;
+    margin: 0px;
+    left: calc(50% - 10px);
+    position: fixed;
+    width: 20px;
+    height: 10px;
+}
+
+
+/* GRAY AREA AT TOP */
+
+.hide-blocks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    oppacity: 0.8;
+    background: #708090;
+    z-index: 5;
+}
+
+.main #menu, #nav-box {
+    top: 1.0em;
+}
+
+@media (min-width: 768px) {
+    .hide-blocks {
+        height: 1.5em;
+    }
+    .main #menu, #nav-box {
+        top: 1.5em;
+    }
+}
+
+nav {
+    margin-left: -40px;
+}
+
+nav ul {
+    min-height: 400px;
+    position: absolute;
+    top: 10px;
+    margin-top: 5.0vh;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    color: #FFF;
+}
+
+nav li {
+    width: 100%;
+}
+
+nav a {
+    margin-top: 0.5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    display: block;
+    /*padding: 5% 0; */
+    color: white;
+}
+
+nav a:hover {
+    background: #708090;
+    text-decoration: none;
+    color: inherit;
+}

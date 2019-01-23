@@ -1,0 +1,165 @@
+
+
+.left-column, .right-column {
+    height: auto;
+    padding: 40px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border: 2px solid #999;
+}
+
+.project p {
+    text-align: left;
+}
+
+.project .view-site {
+    display: block;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.project .view-site a {
+    display: inline-block;
+    padding: 4px 30px;
+    color: #333b7b;
+    border: 2px solid #333b7b;
+
+}
+
+.project .view-site a::after {
+    border-left: 1px solid #333b7b;
+    border-top: 1px solid #333b7b;
+    content: "";
+    height: 9px;
+    margin: 0;
+    position: absolute;
+    right: 13px;
+    top: 11px;
+    -webkit-transform: rotate(136deg);
+    -moz-transform: rotate(136deg);
+    -o-transform: rotate(136deg);
+    -ms-transform: rotate(136deg);
+    transform: rotate(136deg);
+    width: 9px;
+}
+
+.wrapper .left-column {
+    text-align: center;
+    padding-top: 65px;
+}
+
+.left-column .write-up {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    max-width: 360px;
+}
+
+.switches {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+}
+
+.switch-up, .switch-down {
+    height: 120px;
+    z-index: 0;
+    text-align: center;
+}
+
+.switch-up i, .switch-down i {
+    font-size: 90px;
+}
+
+.visible-xs .switch-up,.visible-xs .switch-down {
+    height: 100px;
+}
+
+.visible-xs .switch-up i,.visible-xs .switch-down i {
+    font-size: 70px;
+}
+
+.columns {
+    overflow-y: hidden;
+}
+
+.columns h1 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+
+.columns h2 {
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.write-up {
+    padding-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+    .columns {
+        height: 620px;
+    }
+    .project {
+        height: 620px;
+    }
+    .left-column .project {
+        top: -1240px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .columns {
+        height: 620px;
+        overflow-y: hidden;
+    }
+
+    .columns h2 {
+        font-size: 46px;
+    }
+    .wrapper .left-column {
+        text-align: center;
+        padding-top: 105px;
+    }
+    .right-column {
+        padding-top: 100px;
+    }
+    .switches {
+        width: 50%;
+        top: 470px;
+        left: 50%;
+    }
+    .switch-up, .switch-down {
+        height: 150px;
+    }
+    .switch-up i, .switch-down i {
+        font-size: 100px;
+    }
+
+    .heading h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        border: none;
+        text-transform: uppercase;
+        color: #333b7b;
+    }
+}
